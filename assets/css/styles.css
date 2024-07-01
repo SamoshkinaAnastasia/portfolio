@@ -2,6 +2,7 @@
 @import url(about-us.css);
 @import url(services.css);
 @import url(contacts.css);
+@import url(news.css);
 * {
     margin: 0;
     padding: 0;
@@ -114,6 +115,55 @@ p {
 .hospital-info p {
     font-size: 1.2em;
     text-align: left;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.mid-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.full-width-image-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.news-block {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(176, 192, 177); /* Можно изменить цвет фона */
+    border-radius: 10px;
+}
+
+.news-block h2 {
+    margin-top: 0;
+    text-align: center; /* Центрируем заголовок */
+}
+
+.news-block ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Убираем внешние отступы у списка */
+}
+
+.news-block li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-block li:last-child {
+    border-bottom: none;
 }
 
 .contact-info {
