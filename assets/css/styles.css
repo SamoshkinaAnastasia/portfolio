@@ -220,7 +220,18 @@ body, html {
 .contact-info button:hover {
     background-color:rgb(29, 85, 49);
 }
-
+.bell-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url('assets/img/bell.jpg');
+    background-size: cover;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
 footer {
     background: rgba(47, 133, 78, 1);
     color: #ffffff;

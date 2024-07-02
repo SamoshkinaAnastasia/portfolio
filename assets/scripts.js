@@ -14,3 +14,7 @@ setInterval(() => {
         }, 500);
     }
 }, 7000);
+
+document.querySelector('.bell-icon').addEventListener('click', function() {
+    alert('Уведомления');
+  });

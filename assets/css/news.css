@@ -1,8 +1,8 @@
 .news-list {
     display: flex;
     flex-wrap: wrap; /* Разрешаем перенос элементов на следующую строку */
-    justify-content: space-between; /* Равномерное распределение элементов по горизонтали с промежутками между колонками */
-    padding: 0;
+    justify-content: center; /* Равномерное распределение элементов по горизонтали с промежутками между колонками */
+    padding: 20px;
 }
 
 .news-card {
@@ -34,6 +34,6 @@
     display: block;
     margin-top: 10px;
     text-decoration: none;
-    color: #007bff;
+    color: #eaf3ea;
     font-size: 0.8em;
 }
