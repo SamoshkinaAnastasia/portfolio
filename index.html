@@ -24,7 +24,18 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
     </nav>
-
+    <div class="bell-icon">
+      <a href="#" class="help-icon">
+        <img src="assets/img/bell.jpg" alt="Иконка колокольчика" />
+      </a>
+    </div>
+    <div class="help-popup" id="helpPopup">
+      <p>Нужна помощь?</p>
+      <div class="help-options">
+          <button onclick="confirmHelp(true)">Да</button>
+          <button onclick="confirmHelp(false)">Нет</button>
+      </div>
+    </div>
   </header>
 
     <main>
@@ -102,7 +113,7 @@
         </form>
       </section>
     </main>
-    <div class="bell-icon"></div>
+    
     <footer>
       <p>2024 новый шок контент</p>
     </footer>

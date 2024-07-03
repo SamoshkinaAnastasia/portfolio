@@ -15,6 +15,20 @@ setInterval(() => {
     }
 }, 7000);
 
-document.querySelector('.bell-icon').addEventListener('click', function() {
-    alert('Уведомления');
-  });
+
+const bellIcon = document.getElementById('bellIcon');
+const helpPopup = document.getElementById('helpPopup');
+
+bellIcon.addEventListener('click', () => {
+    helpPopup.style.display = 'block';
+});
+
+
+function confirmHelp(answer) {
+    if (answer) {
+        alert('Спасибо за ваш ответ!');
+    } else {
+        alert('Не стесняйтесь обращаться, если вам понадобится помощь!');
+    }
+    helpPopup.style.display = 'none'; 
+}

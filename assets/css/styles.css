@@ -13,6 +13,7 @@ body {
     font-family: 'Pt Serif', serif;
     line-height: 1.2;
     color: #000000;
+    padding-top: 60px;
 }
 
 
@@ -37,6 +38,7 @@ main {
     justify-content: flex-start; 
     padding: 2rem; 
     min-height: 750px; 
+    padding-top: 130px;
 }
 
 main section {
@@ -87,7 +89,7 @@ main section {
 }
 
 h1, h2, h3 {
-    font-family: 'Roboto', serif;
+    font-family: 'Pt Serif', serif;
 }
 
 h2 {
@@ -142,19 +144,19 @@ body, html {
 .news-block {
     width: 100%;
     padding: 20px;
-    background-color: rgb(176, 192, 177); /* Можно изменить цвет фона */
+    background-color: rgb(176, 192, 177); 
     border-radius: 10px;
 }
 
 .news-block h2 {
     margin-top: 0;
-    text-align: center; /* Центрируем заголовок */
+    text-align: center; 
 }
 
 .news-block ul {
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Убираем внешние отступы у списка */
+    margin: 0; 
 }
 
 .news-block li {
@@ -220,17 +222,68 @@ body, html {
 .contact-info button:hover {
     background-color:rgb(29, 85, 49);
 }
+
 .bell-icon {
-    position: fixed;
-    bottom: 20px;
+    position: fixed; 
+    top: 10%; 
     right: 20px;
+    transform: translateY(-50%); 
     width: 50px;
     height: 50px;
-    background-image: url('assets/img/bell.jpg');
-    background-size: cover;
+    overflow: hidden; 
+    border-radius: 50%; 
     cursor: pointer;
-    z-index: 1000;
-  }
+    background-color: rgba(47, 133, 78, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bell-icon img {
+    width: 30px; 
+    height: auto;
+    border-radius: 50%; 
+    transition: transform 0.3s ease; 
+}
+
+.bell-icon:hover img {
+    transform: scale(1.1); 
+}
+
+.help-popup {
+    position: fixed;
+    top: 20%;
+    right: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    display: none; 
+}
+
+.help-popup p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.help-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.help-options button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: rgba(47, 133, 78, 1);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.help-options button:hover {
+    background-color: rgb(29, 85, 49);
+}
   
 footer {
     background: rgba(47, 133, 78, 1);
