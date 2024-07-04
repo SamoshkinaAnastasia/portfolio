@@ -280,7 +280,7 @@ body, html {
 
 .help-tabs {
     position: fixed;
-    bottom: 150px;
+    bottom: 400px;
     right: 20px;
     width: 300px;
     background: rgb(216, 193, 143);
@@ -320,25 +320,26 @@ body, html {
 }
 
 .button-group {
-    margin-top: 20px; /* Расстояние между кнопками и предыдущим содержимым */
-    text-align: center; /* Центрирование кнопок */
-  }
-  
-  .button-group button {
-    margin: 0 10px; /* Расстояние между кнопками */
-    padding: 10px 20px;
-    background-color: #2F854E;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 1em;
-  }
-  
-  .button-group button:hover {
-    background-color: rgb(29, 85, 49);
-  }
+  margin-top: 20px; 
+  text-align: center; 
+}
+
+.button-group button {
+  margin: 0 10px; 
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Pt Serif', serif;
+  font-size: 1em;
+}
+
+.button-group button:hover {
+  background-color: #b6b6b6;
+}
 
 footer {
     background: rgba(47, 133, 78, 1);
