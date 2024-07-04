@@ -1,4 +1,5 @@
-const slides = document.querySelector('.slides');
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelector('.slides');
 const slideWidth = document.querySelector('.slide').clientWidth;
 let currentIndex = 0;
 
@@ -14,21 +15,4 @@ setInterval(() => {
         }, 500);
     }
 }, 7000);
-
-
-const bellIcon = document.getElementById('bellIcon');
-const helpPopup = document.getElementById('helpPopup');
-
-bellIcon.addEventListener('click', () => {
-    helpPopup.style.display = 'block';
 });
-
-
-function confirmHelp(answer) {
-    if (answer) {
-        alert('Спасибо за ваш ответ!');
-    } else {
-        alert('Не стесняйтесь обращаться, если вам понадобится помощь!');
-    }
-    helpPopup.style.display = 'none'; 
-}

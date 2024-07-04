@@ -48,9 +48,53 @@
         </div>
       </div>
     </main>
-
+    <div class="bell-icon" id="bellIcon">
+      <img src="assets/img/bell.jpg" alt="Помощь">
+    </div>
+  
+    <div class="help-popup" id="helpPopup">
+      <p>Нужна помощь?</p>
+      <button onclick="confirmHelp(true)">Да</button>
+      <button onclick="confirmHelp(false)">Нет</button>
+    </div>
+  
+    <div class="help-tabs" id="helpTabs">
+      <div class="tab">
+        <input type="radio" id="tab1" name="tab-group" checked>
+        <label for="tab1">Главная</label>
+        <div class="content">
+          <p>Здесь информация о том, как пользоваться главной страницей...</p>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" id="tab2" name="tab-group">
+        <label for="tab2">О нас</label>
+        <div class="content">
+          <p>Здесь информация о странице "О нас"...</p>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" id="tab3" name="tab-group">
+        <label for="tab3">Услуги</label>
+        <div class="content">
+          <p>Здесь информация о странице "Услуги"...</p>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" id="tab4" name="tab-group">
+        <label for="tab4">Контакты</label>
+        <div class="content">
+          <p>Здесь информация о странице "Контакты"...</p>
+        </div>
+      </div>
+      <div class="button-group">
+        <button onclick="closeHelpTabs()">Закрыть</button>
+        <button onclick="goBackToHelp()">Назад</button>
+      </div>
+    </div>
     <footer>
       <p>2024 новый шок контент</p>
     </footer>
+    <script src="assets/forms.js"></script>
   </body>
 </html>
